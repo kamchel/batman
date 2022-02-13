@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper-bundle.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,700" rel="stylesheet" />
 
@@ -35,34 +36,83 @@
 
 	<main class="main">
 		<div class="container">
-			<div class="main__rating">
-				<div class="main__rating-title"> 2022, боевик, триллер </div>
-				<div class="main__rating-wrap">
-					<div class="main__rating-stars">
-						<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
-						<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
-						<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
-						<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
-						<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
-						<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
-						<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
-						<div class="main__rating-star"><img src="img/star-no-active.svg" alt=""></div>
-						<div class="main__rating-star"><img src="img/star-no-active.svg" alt=""></div>
-						<div class="main__rating-star"><img src="img/star-no-active.svg" alt=""></div>
-					</div>
+			<div class="main-wrapper">
+				<div class="main-rating__wrap">
+					<div class="main__rating">
+						<div class="main__rating-title"> 2022, боевик, триллер </div>
+						<div class="main__rating-wrap">
+							<div class="main__rating-stars">
+								<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
+								<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
+								<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
+								<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
+								<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
+								<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
+								<div class="main__rating-star star-active"><img src="img/star-active.svg" alt=""></div>
+								<div class="main__rating-star"><img src="img/star-no-active.svg" alt=""></div>
+								<div class="main__rating-star"><img src="img/star-no-active.svg" alt=""></div>
+								<div class="main__rating-star"><img src="img/star-no-active.svg" alt=""></div>
+							</div>
 
-					<div class="main__rating-number">7/10</div>
+							<div class="main__rating-number">7/10</div>
+						</div>
+					</div>
+					<h1 class="main__title">Бэтмен</h1>
+					<div class="main__description">После двух лет поисков правосудия на улицах Готэма для своих сограждан
+						Бэтмен
+						становится олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений
+						на
+						представителей элиты, загадочные улики приводят Брюса Уэйна в самые темные закоулки преступного мира.
+						Теперь
+						под прицелом оказывается сам Бэтмен.</div>
+					<a href="#" class="main__button">
+						Купить билеты
+					</a>
+				</div>
+				<div class="main-play__wrap">
+					<div class="main-play__border">
+					</div>
+					<div class="main-play__buttom">
+						<img src="img/icon-play.svg" alt="">
+					</div>
 				</div>
 			</div>
-			<h1 class="main__title">Бэтмен</h1>
-			<div class="main__description">После двух лет поисков правосудия на улицах Готэма для своих сограждан
-				Бэтмен
-				становится олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на
-				представителей элиты, загадочные улики приводят Брюса Уэйна в самые темные закоулки преступного мира. Теперь
-				под прицелом оказывается сам Бэтмен.</div>
-			<a href="#" class="main__button">
-				Купить билеты
-			</a>
+			<div class="main-slider__wrap">
+				<div class="main-slider swiper">
+					<div class="swiper-wrapper">
+						<div class="main-slider__slide swiper-slide">
+							<img src="img/slider-1.jpg" alt="">
+							<span>Трейлер #1</span>
+						</div>
+						<div class="main-slider__slide swiper-slide">
+							<img src="img/slider-2.jpg" alt="">
+							<span>Трейлер #2</span>
+						</div>
+						<div class="main-slider__slide swiper-slide">
+							<img src="img/slider-1.jpg" alt="">
+							<span>Трейлер #3</span>
+						</div>
+						<div class="main-slider__slide swiper-slide">
+							<img src="img/slider-2.jpg" alt="">
+							<span>Трейлер #4</span>
+						</div>
+						<div class="main-slider__slide swiper-slide">
+							<img src="img/slider-1.jpg" alt="">
+							<span>Трейлер #5</span>
+						</div>
+						<div class="main-slider__slide swiper-slide">
+							<img src="img/slider-2.jpg" alt="">
+							<span>Трейлер #6</span>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="main-slider__arrow">
+					<img src="img/arrow-right.svg" alt="">
+				</div>
+			</div>
+
 		</div>
 	</main>
 	<footer class="footer">
@@ -75,6 +125,8 @@
 			</ul>
 		</div>
 	</footer>
+	<script src="js/swiper-bundle.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
